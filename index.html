@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ブログサイト</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>ブログサイト</h1>
+        <nav>
+            <ul>
+                <li><a href="#posts">投稿一覧</a></li>
+                <li><a href="#new-post">新しい投稿</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="posts">
+            <h2>投稿一覧</h2>
+            <article>
+                <h3>投稿タイトル1</h3>
+                <p>投稿内容の例1。ここにブログの内容が入ります。</p>
+            </article>
+            <article>
+                <h3>投稿タイトル2</h3>
+                <p>投稿内容の例2。ここにブログの内容が入ります。</p>
+            </article>
+            <!-- 新しい投稿がここに追加されます -->
+        </section>
+
+        <section id="new-post">
+            <h2>新しい投稿を追加</h2>
+            <form id="new-post-form">
+                <label for="post-title">タイトル:</label>
+                <input type="text" id="post-title" name="post-title" required>
+                
+                <label for="post-content">内容:</label>
+                <textarea id="post-content" name="post-content" required></textarea>
+                
+                <button type="submit">投稿する</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 ブログサイト</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
